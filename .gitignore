@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+
+# Build directories
+/dist/
+/build/
+
+# Environment files (for example, .env files containing sensitive information)
+.env
+
+# Logs
+*.log
+
+# macOS specific files
+.DS_Store
+
+# Ignore all .DS_Store files in any directory
+**/.DS_Store
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+Thumbs.db
+
+
+# Ignore test files
+*.test.js
+*.spec.js
+
+# Ignore bundled files
+/dist/
+/build/
+
+# Ignore compiled files
+*.o
+*.out
+
+# Ignore any other temporary files created by editors or the system
+*.swp
+*.swo
+*.bak
+*.tmp
