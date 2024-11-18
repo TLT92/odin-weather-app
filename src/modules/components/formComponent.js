@@ -1,18 +1,25 @@
-function createForm () {
+function createForm() {
   const userInputForm = document.createElement("div");
   userInputForm.innerHTML = `
     <form id="weather-form">
       <input type="text" placeholder="Enter city" required>
-      <label for="unit-select">Choose units:</label>
-      <select id="unit-select" name="units">
-        <option value="metric">Metric (°C, km)</option>
-        <option value="us">Imperial (°F, miles)</option>
-      </select>
+      <div class="toggle-container">
+          <div class="unit-label">
+            <span id="unit-label-text">Metric</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="unit-toggle">
+            <span class="slider"></span>
+          </label>
+          <div class="unit-label">
+            <span id="unit-label-text">Imperial</span>
+          </div>
+      </div>
       <button type="submit">Show weather</button>
     </form>
   `;
 
   return userInputForm;
-};
+}
 
 export { createForm };
