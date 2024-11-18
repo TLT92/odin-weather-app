@@ -19,7 +19,7 @@ function displayWeatherData(weatherData, units) {
     </div>
   `;
 
-  document.body.appendChild(weatherDisplayElement);
+  document.getElementById("content-wrapper").appendChild(weatherDisplayElement);
 }
 
 export { displayWeatherData }

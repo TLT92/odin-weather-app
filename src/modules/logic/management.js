@@ -34,7 +34,7 @@ function createAndDisplayForm() {
   addFormEventListener(weatherForm, fetchAndDisplayWeatherData);
 
   // Append the form to the DOM
-  document.body.appendChild(userInputForm);
+  document.getElementById("content-wrapper").appendChild(userInputForm);
 }
 
 export { fetchAndDisplayWeatherData, createAndDisplayForm };

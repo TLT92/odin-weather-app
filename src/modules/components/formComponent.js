@@ -1,5 +1,6 @@
 function createForm() {
   const userInputForm = document.createElement("div");
+  userInputForm.setAttribute("id", "form-wrapper");
   userInputForm.innerHTML = `
     <form id="weather-form">
       <input type="text" placeholder="Enter city" required>
